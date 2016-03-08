@@ -50,10 +50,6 @@ switch ($uri) {
         require VIEW_DIR . '/pages/addUsers.php';
         break;
 		
-	case '/db':
-        require __DIR__ . '/../adminer.php';
-        break;
-		
     default:
         break;
 }
