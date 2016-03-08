@@ -13,7 +13,7 @@
 
 <h1> Login </h1>
 	<!-- Login form that send the user to the images page-->
-	<form id="login_form" method="post" <?php if($_SESSION["loggedIn"] == true){ ?> action="/images"><?php } else { ?> action="/"> <?php } ?>
+	<form id="login_form" method="post" <?php if(isset($_SESSION['loggedIn']) &&$_SESSION["loggedIn"] == true){ ?> action="/images"><?php } else { ?> action="/"> <?php } ?>
     <ul>
 		<li><label>Username:<input type="text" name="loginName"/></label></li>
        	<li><label>Password:<input type="password" name="loginPassword"/></label></li>
